@@ -1,5 +1,5 @@
 import unittest
-from repro2.commande import *
+from repro2.code import *
 
 class TestCodeCommandeConforme(unittest.TestCase):
   def test_exemple(self):

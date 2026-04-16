@@ -1,5 +1,5 @@
 import unittest
-from repro2.stock import *
+from repro2.feuilles import *
 
 class TestVerifierCommandeImpression(unittest.TestCase):
   def test_exemple(self):
