@@ -13,3 +13,6 @@ class ErreurTropLong(ValueError):
       super().__init__(self.message)
     else:
       super().__init__()
+
+def codeCommandeConforme(code : str) -> bool:
+  pass
