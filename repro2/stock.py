@@ -5,3 +5,6 @@ class Reponse(Enum):
   ACCEPTER_ALERTE_ORANGE = 1,
   ACCEPTER_ALERTE_ROUGE = 2,
   REFUSER = 3
+
+def verifierCommandeImpression(nbFeuillesNecessaires : int, nbFeuillesEnStock : int) -> Reponse:
+  pass
