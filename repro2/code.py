@@ -14,5 +14,17 @@ class ErreurTropLong(ValueError):
     else:
       super().__init__()
 
-def codeCommandeConforme(code : str) -> bool:
-  pass
+def codeCommandeConforme(code: str) -> bool:
+    numero = [0,1,2,3,4,5,6,7,8,9]
+    if len(code) < 5:
+        raise ErreurTropCourt(len(code))
+    if len(code) > 10:
+        raise ErreurTropLong(len(code))
+    if code[0] != "#":
+        return False
+    if not code[1].isdigit() or not code[2].isdigit():
+        return False
+    for c in code[3:]:
+        if not c.isalnum():
+            return False
+    return True
